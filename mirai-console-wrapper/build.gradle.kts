@@ -8,6 +8,8 @@ plugins {
 apply(plugin = "com.github.johnrengelman.shadow")
 
 tasks.withType<com.github.jengelman.gradle.plugins.shadow.tasks.ShadowJar> {
+    destinationDir = file("$rootDir/build/output")
+    
     manifest {
         attributes["Main-Class"] = "net.mamoe.mirai.console.wrapper.WrapperMain"
     }
