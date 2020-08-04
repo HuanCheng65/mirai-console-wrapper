@@ -60,3 +60,7 @@ java {
 tasks.withType(JavaCompile::class.java) {
     options.encoding = "UTF8"
 }
+
+tasks.withType(Jar::class.java) {
+    destinationDir = file("$rootDir/build/output")      //$rootDir 取项目的顶级目录
+}
