@@ -28,5 +28,5 @@ jobs:
       uses: actions/upload-artifact@master
       if: always()
       with:
-        name: Padavan-packages
-        path: ./build/output
+        name: output
+        path: ./build/output/
